@@ -1,59 +1,81 @@
-html, body  {
-  height: 100%;
+:root {
+  --mainbgcolor: #FFF;
+  --maintoolcolor: #5F5F5F;
+  --toolhoovercolor: #333;
+  --coolgreen: #4CAF50;
 }
 
-#wrapper {
-  height: calc(100% - 2px); /* for border */
+body {
+  background-color: var(--mainbgcolor);
+    
 }
 
-#leftmenu, #rightmenu {
-  height: calc(100% - 234px); /* for header, footer */
+ul {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--maintoolcolor);
 }
 
-#wrapper {
-  background:rgb(255,255,255);
-  width:100%;
-  position:relative;
-  border: 1px solid black;
-  /* black border */
-   margin: auto; 
-  /* centre this div */
-}
-#header {
-  height: 100px;
-  text-align:center;
-  padding: 1em;
-  background-color: grey;
-}
-#leftmenu {
-  width:10%;
-  float:left;
-  font-size: 75%;
-  padding:.5em;
-  border-right:2px solid black;
-}
-#rightmenu {
-  width:40%;
-  float:right;
-  font-size: 75%;
-  padding:.5em;
-  border-left:2px solid black;
-}
-#content {
-  background-color:white;
-  font-size: 150%;
-}
-#footer {
-  clear:both;
-  /* push footer under other divs */
-  height: 70px;
-  background-color:white;
-  border: 1px solid black;
-  padding-top:40px;
-  text-align:center;
-  font-size: 70%;
+li {
+  float: left;
+  border-right:2px solid var(--mainbgcolor);
+  text-align: center;
 }
 
-#saludo{
-  z-index: 100;
+li:last-child {
+  border-right: none;
 }
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color:  var(--coolgreen);
+}
+
+#priantusnamebtn {
+  float: right;
+}
+
+.cabezal{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--mainbgcolor);
+}
+
+.topname {
+  float: left;
+  font-family: 'Roboto', sans-serif;
+  font-size: 26px; 
+  font-weight: 40; 
+  line-height: 36px; 
+  margin-right: 10px;
+  color: var(--coolgreen);
+}
+
+.rightname{
+  float: right;
+  font-family: 'Roboto', sans-serif;
+  font-style: oblique;
+  font-size: 16px; 
+  font-weight: 40; 
+  line-height: 46px; 
+  margin-right: 10px;
+  color: black;
+
+}
+
+
+
+
+
