@@ -1,0 +1,59 @@
+html, body  {
+  height: 100%;
+}
+
+#wrapper {
+  height: calc(100% - 2px); /* for border */
+}
+
+#leftmenu, #rightmenu {
+  height: calc(100% - 234px); /* for header, footer */
+}
+
+#wrapper {
+  background:rgb(255,255,255);
+  width:100%;
+  position:relative;
+  border: 1px solid black;
+  /* black border */
+   margin: auto; 
+  /* centre this div */
+}
+#header {
+  height: 100px;
+  text-align:center;
+  padding: 1em;
+  background-color: grey;
+}
+#leftmenu {
+  width:10%;
+  float:left;
+  font-size: 75%;
+  padding:.5em;
+  border-right:2px solid black;
+}
+#rightmenu {
+  width:40%;
+  float:right;
+  font-size: 75%;
+  padding:.5em;
+  border-left:2px solid black;
+}
+#content {
+  background-color:white;
+  font-size: 150%;
+}
+#footer {
+  clear:both;
+  /* push footer under other divs */
+  height: 70px;
+  background-color:white;
+  border: 1px solid black;
+  padding-top:40px;
+  text-align:center;
+  font-size: 70%;
+}
+
+#saludo{
+  z-index: 100;
+}
