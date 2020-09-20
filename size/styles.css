@@ -76,6 +76,8 @@ li a:hover:not(.active) {
 }
 
 
-
-
-
+@media screen and (max-width: 690px) {
+  .volatil{
+    display: none;
+  }
+}
