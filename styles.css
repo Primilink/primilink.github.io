@@ -7,11 +7,9 @@
 
 body {
   background-color: var(--mainbgcolor);
-    
 }
 
 ul {
-
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -77,7 +75,19 @@ li a:hover:not(.active) {
 
 
 @media screen and (max-width: 690px) {
-  .volatil{
+  .volatil1{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .volatil2{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .volati3{
     display: none;
   }
 }
